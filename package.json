@@ -1,0 +1,39 @@
+{
+  "name": "@springrole/logger",
+  "version": "0.0.1",
+  "description": "Logger service independent from trivia-core, so that it can be used across standalone apps.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpringRole/logger.git"
+  },
+  "keywords": [
+    "logging",
+    "logger"
+  ],
+  "author": "Avinash Ramesha",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/SpringRole/logger/issues"
+  },
+  "homepage": "https://github.com/SpringRole/logger#readme",
+  "dependencies": {
+    "@sentry/node": "^6.18.2",
+    "@sentry/tracing": "^6.18.2",
+    "aws-sdk": "^2.1093.0",
+    "lodash.isempty": "^4.4.0",
+    "lodash.omit": "^4.5.0",
+    "winston": "^3.6.0",
+    "winston-cloudwatch": "^3.1.1",
+    "winston-loggly-bulk": "^3.2.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.5.1"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
+}
