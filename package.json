@@ -1,6 +1,6 @@
 {
   "name": "@springrole/logger",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Logger service independent from trivia-core, so that it can be used across standalone apps.",
   "main": "lib/index.js",
   "scripts": {
@@ -21,9 +21,9 @@
   },
   "homepage": "https://github.com/SpringRole/logger#readme",
   "dependencies": {
+    "@aws-sdk/client-cloudwatch-logs": "^3.54.1",
     "@sentry/node": "^6.18.2",
     "@sentry/tracing": "^6.18.2",
-    "aws-sdk": "^2.1093.0",
     "lodash.isempty": "^4.4.0",
     "lodash.omit": "^4.5.0",
     "winston": "^3.6.0",
