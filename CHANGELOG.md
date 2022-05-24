@@ -1,3 +1,10 @@
+## [0.0.5](https://github.com/SpringRole/logger/compare/v0.0.4...v0.0.5) (2022-05-24)
+
+
+### Bug Fixes
+
+* fixing issue with loggly logs ([4f61b67](https://github.com/SpringRole/logger/commit/4f61b675183015fcb739f12b26dbfd7fe9d73362))
+
 ## [0.0.4](https://github.com/SpringRole/logger/compare/v0.0.3...v0.0.4) (2022-05-24)
 
 
