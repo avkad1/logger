@@ -1,0 +1,36 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+  - main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+  - checkout: self
+    persistCredentials: true
+  - task: NodeTool@0
+    inputs:
+      versionSpec: "14.x"
+  - task: npmAuthenticate@0
+    inputs:
+      workingFile: ".npmrc"
+    displayName: "Authenticate with NPM"
+  - script: |
+      set e
+      npm install
+    displayName: "Install dependencies"
+  - script: |
+      git config --global user.email "build-ado@springworks.in"
+      git config --global user.name "Azure DevOps Build"
+      npm version patch -m "Bump version to %s [skip ci]" --force
+    displayName: "Bump release version"
+  - script: |
+      git push origin HEAD:$(Build.SourceBranchName)
+    displayName: "Updated version in code"
+  - script: |
+      npm publish
+    displayName: "Publish Package"
