@@ -1,6 +1,6 @@
 {
   "name": "@springrole/logger",
-  "version": "0.0.7",
+  "version": "1.0.0",
   "description": "Logger service independent from trivia-core, so that it can be used across standalone apps.",
   "main": "lib/index.js",
   "scripts": {
@@ -18,17 +18,19 @@
   "author": "Avinash Ramesha",
   "license": "UNLICENSED",
   "dependencies": {
-    "@aws-sdk/client-cloudwatch-logs": "3.163.0",
-    "@sentry/node": "^6.18.2",
-    "@sentry/tracing": "^6.18.2",
-    "lodash.isempty": "^4.4.0",
-    "lodash.omit": "^4.5.0",
-    "winston": "3.8.1",
-    "winston-cloudwatch": "6.1.1",
-    "winston-loggly-bulk": "^3.2.1"
+    "@aws-sdk/client-cloudwatch-logs": "3.259.0",
+    "@sentry/node": "7.34.0",
+    "@sentry/tracing": "7.34.0",
+    "lodash.isempty": "4.4.0",
+    "lodash.omit": "4.5.0",
+    "winston": "3.8.2",
+    "winston-cloudwatch": "6.1.1"
   },
   "devDependencies": {
-    "husky": "^7.0.4",
-    "prettier": "^2.5.1"
+    "husky": "8.0.3",
+    "prettier": "2.8.3"
+  },
+  "engines": {
+    "node": ">=18.12.1"
   }
 }
