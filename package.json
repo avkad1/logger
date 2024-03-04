@@ -1,6 +1,6 @@
 {
   "name": "@springrole/logger",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Logger service independent from trivia-core, so that it can be used across standalone apps.",
   "main": "lib/index.js",
   "scripts": {
